@@ -1,0 +1,14 @@
+/* Ensure the body and html elements take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent unwanted scrollbars */
+}
+
+/* Style the main content area to take up the remaining space */
+.router-outlet {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+

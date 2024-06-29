@@ -1,0 +1,89 @@
+/* Base styles for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #121212; /* Spotify's dark background color */
+}
+
+/* Styles for the mat-card to look more like Spotify */
+.spotify-card {
+  background-color: #282828; /* Darker shade for card background */
+  color: white;
+  padding: 40px; /* Increased padding for a larger card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Increased width */
+  max-width: 90%; /* Ensure it is responsive on smaller screens */
+}
+
+/* Title styles */
+.spotify-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Content styles */
+.spotify-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button styles */
+.login-button {
+  background-color: #1DB954; /* Spotify green */
+  color: white; /* White text */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover and focus states for the button */
+.login-button:hover {
+  background-color: #1AA34A; /* Slightly darker green for hover state */
+}
+
+.login-button:focus {
+  background-color: #178A3B; /* Even darker green for focus state */
+}
+
+
+
+/* Toolbar styles */
+.spotify-toolbar {
+  background-color: #1DB954; /* Spotify green */
+  color: white; /* White text */
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Padding for the toolbar content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Logo styles */
+.spotify-logo {
+  height: 40px; /* Adjust the logo height */
+  margin-right: 10px; /* Space between the logo and the title */
+}
+
+/* Title styles */
+.toolbar-title {
+  font-size: 24px; /* Larger font size for the title */
+  font-weight: bold;
+}
+
+
+
+
+
+
+

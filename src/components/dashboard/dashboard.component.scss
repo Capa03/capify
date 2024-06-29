@@ -1,0 +1,126 @@
+/* Toolbar styles */
+.spotify-toolbar {
+  background-color: #1DB954; /* Spotify green */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.search-bar {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  margin-right: 20px;
+}
+
+.user-avatar {
+  display: flex;
+
+  border-radius: 50%;
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  overflow-y: auto;
+  flex: 1 0 auto;
+  margin-top: 3rem;
+}
+
+.playlist-section {
+  margin-bottom: 20px;
+}
+
+.playlist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.playlist-card {
+  background-color: #282828;
+  color: white;
+  border-radius: 1rem;
+  width: calc(25% - 20px);
+}
+
+.mat-card-content{
+  display: flex;
+  align-items: center;
+}
+
+.playlist-card img {
+  width: 20%;
+  border-top-left-radius: 1rem; /* Adjust the radius as needed */
+  border-bottom-left-radius: 1rem; /* Adjust the radius as needed */
+}
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+.mat-card-header {
+  background-color: #1DB954; /* Spotify green */
+}
+
+/* Music player styles */
+.music-player {
+  background-color: #282828;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .playlist-card {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .playlist-card {
+    width: calc(50% - 20px);
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playlist-card {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 150px;
+  }
+}

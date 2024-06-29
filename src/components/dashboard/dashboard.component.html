@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="spotify-toolbar">
+  <img src="assets/music-player.svg" alt="App Logo" class="app-logo">
+  <span class="spacer"></span>
+  <mat-form-field class="search-bar" appearance="outline">
+    <mat-label>Search</mat-label>
+    <input matInput type="text" placeholder="Search for music or playlists">
+  </mat-form-field>
+  <button mat-icon-button aria-label="Search" class="search-button">
+    <mat-icon>search</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <img src="assets/avatar.png" alt="User Avatar" class="user-avatar">
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+</mat-toolbar>
+
+<div class="dashboard-container">
+  <div class="playlist-section">
+    <h2>Your Playlists</h2>
+
+    <div class="playlist-cards">
+        <mat-card *ngFor="let playlist of playlists" class="playlist-card" >
+          <div class="mat-card-content">
+            <img mat-card-image  src="{{ playlist.image }}" alt="{{ playlist.name }}">
+            <mat-card-content>
+              <mat-card-header>
+                <mat-card-title>{{ playlist.name }}</mat-card-title>
+              </mat-card-header>
+            </mat-card-content>
+          </div>
+        </mat-card>
+      </div>
+
+  </div>
+</div>
+
+<div class="music-player">
+  <p>Music Player Controls</p>
+</div>

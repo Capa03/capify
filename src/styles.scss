@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/* Ensure the body and html elements take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent unwanted scrollbars */
+}
+
+/* Style the main content area to take up the remaining space */
+.router-outlet {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure the toolbar is at the top and the content area fills the rest */
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Allow the router-outlet to take the full height excluding the toolbar */
+.router-outlet {
+  margin-top: 64px; /* Height of the mat-toolbar */
+  height: calc(100% - 64px);
+  overflow-y: auto; /* Enable scrolling for the content area if needed */
+}
+
+/* Optional: Style the body to match the Spotify theme */
+body {
+  background-color: #121212; /* Spotify's dark background color */
+  color: white; /* White text */
+  font-family: Arial, sans-serif; /* Or use a font similar to Spotify's */
+}
